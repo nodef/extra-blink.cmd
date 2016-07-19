@@ -2,10 +2,18 @@
 setlocal enabledelayedexpansion
 
 :: prepare
-set dur=%OBLINK_DUR%
-set gap=%OBLINK_GAP%
-if "!dur!"=="" set dur=500& setx OBLINK_DUR !dur!
-if "!gap!"=="" set gap=59500& setx OBLINK_GAP !gap!
+set d=%APPDATA%\0rez\oblink
+if not exist %d% mkdir %d%
+for /f "delims=" %%a in ('type "%d%\dur.ini" 2^>NUL') do set dur=%%a
+for /f "delims=" %%a in ('type "%d%\gap.ini" 2^>NUL') do set gap=%%a
+
+:: options
+if not "%~1"=="" set dur=%~1
+if not "%~2"=="" set gap=%~2
+if "!dur!"=="" set dur=500
+if "!gap!"=="" set gap=59500
+echo !dur!> "%d%\dur.ini"
+echo !gap!> "%d%\gap.ini"
 
 :: blink
 :lblnk
