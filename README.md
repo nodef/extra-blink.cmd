@@ -25,3 +25,6 @@ Blink the screen just like you blink your eyes.
 :: blink for 400ms with a gap of 10s (already default)
 > eblink
 ```
+
+
+[![Merferry](https://i.imgur.com/x76l8oG.jpg)](https://merferry.github.io)
