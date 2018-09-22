@@ -1,14 +1,15 @@
-# oblink
-
 Blink the screen just like you blink your eyes.
+> 1. Download [console script](https://raw.githubusercontent.com/winp/extra-blink/master/eblink.cmd).
+> 2. Copy to `C:\Program_Files\Scripts`.
+> 3. Add `C:\Program_Files\Scripts` to `PATH` environment variable.
 
-> Requires [ogamma](https://github.com/0rez/cmd-gamma) and [osleep](https://github.com/0rez/cmd-sleep).
+> Prerequisites:
+> - [extra-gamma](https://github.com/winp/extra-gamma)
+> - [extra-sleep](https://github.com/winp/extra-sleep).
 
-
-## usage
 
 ```batch
-> oblink [<dur> [<gap>]]
+> eblink [<dur> [<gap>]]
 
 :: [] -> optional argument
 :: <> -> argument value
@@ -16,11 +17,11 @@ Blink the screen just like you blink your eyes.
 
 ```batch
 :: blink once every minute (default)
-> oblink
+> eblink
 
 :: blink for 400ms with a gap of 10s (and save set it as default)
-> oblink 400 10000
+> eblink 400 10000
 
 :: blink for 400ms with a gap of 10s (already default)
-> oblink
+> eblink
 ```

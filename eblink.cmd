@@ -4,7 +4,7 @@
 setlocal enabledelayedexpansion
 
 :: prepare
-set d=%APPDATA%\0rez\oblink
+set d=%APPDATA%\merferry\eblink
 if not exist %d% mkdir %d%
 for /f "delims=" %%a in ('type "%d%\dur.ini" 2^>NUL') do set dur=%%a
 for /f "delims=" %%a in ('type "%d%\gap.ini" 2^>NUL') do set gap=%%a
@@ -19,8 +19,8 @@ echo !gap!> "%d%\gap.ini"
 
 :: blink
 :lblnk
-ogamma 4
-osleep !dur!
-ogamma 1
-osleep !gap!
+egamma 4
+esleep !dur!
+egamma 1
+esleep !gap!
 goto :lblnk
