@@ -1,5 +1,5 @@
 Blink the screen just like you blink your eyes.
-> 1. Download [console script](https://github.com/winp/extra-blink/releases/download/1.0.0/eblink.cmd).
+> 1. Download [console script](https://github.com/cmdf/extra-blink/releases/download/1.0.0/eblink.cmd).
 > 2. Copy to `C:\Program_Files\Scripts`.
 > 3. Add `C:\Program_Files\Scripts` to `PATH` environment variable.
 
@@ -27,4 +27,4 @@ Blink the screen just like you blink your eyes.
 ```
 
 
-[![Merferry](https://i.imgur.com/x76l8oG.jpg)](https://merferry.github.io)
+[![cmdf](https://i.imgur.com/x76l8oG.jpg)](https://cmdf.github.io)
