@@ -28,3 +28,4 @@ Blink the screen just like you blink your eyes.
 
 
 [![cmdf](https://i.imgur.com/x76l8oG.jpg)](https://cmdf.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/extra-blink.cmd)
